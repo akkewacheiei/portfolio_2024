@@ -13,7 +13,7 @@ function Home() {
           alt="Profile"
           width={350}
         ></img>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-5">
           <p className="text-[#5781A7] text-3xl">Hello, I'm</p>
           <p className="text-white text-5xl font-bold">Akkewach Yodsomboon</p>
           <p
