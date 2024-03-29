@@ -16,13 +16,15 @@ function Home() {
         <div className="flex flex-col gap-3">
           <p className="text-[#5781A7] text-3xl">Hello, I'm</p>
           <p className="text-white text-5xl font-bold">Akkewach Yodsomboon</p>
-          <p className="text-white text-3xl underline decoration-4 underline-offset-4 decoration-[#4DA9FE]  line-1 anim-typewriter h-10">Full-Stack Developer</p>
+          <p className="text-white text-3xl underline decoration-4 underline-offset-4 decoration-[#4DA9FE]  line-1 anim-typewriter h-10">
+            Full-Stack Developer
+          </p>
           <div className="flex gap-5 mt-8">
             <button className="bg-[#5781A7] text-white text-lg w-32 h-12">
-              contact me
+              Contact
             </button>
             <button className="text-[#5781A7] text-lg border-[#5781A7] border-2  w-32 h-12">
-              resume
+              Resume
             </button>
           </div>
         </div>
