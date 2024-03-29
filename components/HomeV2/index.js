@@ -2,10 +2,7 @@ import styles from "./Styles.module.css";
 
 function Home() {
   return (
-    <div
-      id={styles.home}
-      className="bg-gradient-to-b from-[#0A1128] from-0% via-[#0B1B2A] via-65% to-[#245B8E] to-100%"
-    >
+    <div id={styles.home} className="bg-white">
       <div className="flex justify-center items-center gap-32">
         <img
           className="rounded-lg"
@@ -15,9 +12,9 @@ function Home() {
         ></img>
         <div className="flex flex-col gap-3">
           <p className="text-[#5781A7] text-3xl">Hello, I'm</p>
-          <p className="text-white text-5xl font-bold">Akkewach Yodsomboon</p>
+          <p className="text-black text-5xl font-bold">Akkewach Yodsomboon</p>
           <p
-            className={`text-white text-3xl underline decoration-4 underline-offset-4 decoration-[#4DA9FE]  ${styles.line_1} ${styles.anim_typewriter} h-10`}
+            className={`text-black text-3xl underline decoration-4 underline-offset-4 decoration-[#4DA9FE]  ${styles.line_1} ${styles.anim_typewriter} h-10`}
           >
             Full-Stack Developer
           </p>

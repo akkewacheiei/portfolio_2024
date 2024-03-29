@@ -2,7 +2,7 @@
   padding: 10%;
 }
 
-.line-1 {
+.line_1 {
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   font-size: 180%;
   white-space: nowrap;
@@ -10,7 +10,7 @@
 }
 
 /* Animation */
-.anim-typewriter {
+.anim_typewriter {
   animation: typewriter 7s steps(24) 1s infinite normal both,
     blinkTextCursor 500ms steps(24) infinite normal;
 }
@@ -27,7 +27,7 @@
 }
 @keyframes blinkTextCursor {
   from {
-    border-right-color: rgba(255, 255, 255, 0.75);
+    border-right-color: rgba(0, 0, 0, 0.75);
   }
   to {
     border-right-color: transparent;
