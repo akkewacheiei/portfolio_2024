@@ -5,9 +5,9 @@ function Home() {
     <div id={styles.home} className="bg-white">
       <div className="flex justify-center items-center gap-[128px]">
         <div className="flex flex-col gap-3">
-          <p className="text-black text-5xl font-bold">Hello,</p>
+          <p className="text-black text-5xl font-bold">Hi,</p>
           <p className="text-black text-5xl font-bold mt-3">
-            I'm <span className="text-[#4E87F6]">Akkewach</span>
+            I am <span className="text-[#4E87F6]">Akkewach</span>
           </p>
           <p className="text-black text-5xl font-bold mt-3 ">
             Software Developer
