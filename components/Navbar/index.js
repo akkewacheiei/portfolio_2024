@@ -1,12 +1,12 @@
-import "./style.css";
+import styles from "./Styles.module.css";
 
 export default function Navbar() {
   return (
-    <div id="nav" className="bg-white flex justify-between items-center border-black border-b border-opacity-10">
+    <div id={styles.nav} className="bg-white flex justify-between items-center border-black border-b border-opacity-10">
       <div id="logo">
         <div className="text-black font-medium">Akkewach</div>
       </div>
-      <div id="menu" className="flex gap-10">
+      <div id="menu" className="flex gap-10 invisible lg:visible">
         <div className="text-black font-medium  underline decoration-2 underline-offset-8 decoration-[#4E87F6]">
           Home
         </div>
