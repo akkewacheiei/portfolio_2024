@@ -38,7 +38,7 @@ export default function Navbar() {
         </div>
 
         <button
-          id="hamburger_btn"
+          id={styles.hamburger_btn}
           onClick={handleClick}
           className="flex lg:hidden flex-col justify-center items-center"
         >
