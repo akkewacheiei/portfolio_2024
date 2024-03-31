@@ -1,5 +1,14 @@
 #nav {
-    height: 58px;
-    padding-inline: 10%;
+  height: 58px;
+  padding: 0 10%;
 }
 
+#hamburger_list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  #hamburger_list.open {
+    max-height: 200px; /* ปรับเป็นความสูงที่ต้องการ */
+  }
