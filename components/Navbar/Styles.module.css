@@ -4,11 +4,11 @@
 }
 
 #hamburger_list {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-  
-  #hamburger_list.open {
-    max-height: 200px; /* ปรับเป็นความสูงที่ต้องการ */
-  }
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+#hamburger_list.open {
+  max-height: 200px; /* ปรับเป็นความสูงที่ต้องการ */
+}

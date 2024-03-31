@@ -1,23 +1,21 @@
 "use client";
 import styles from "./Styles.module.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   //Handles the opening and closing of our nav
   const handleClick = () => {
-  /*   if (isOpen) {
-      const hamburgerList = document.getElementById("hamburger_list");
-      document
-        .getElementById("hamburger_btn")
-        .addEventListener("click", function () {
-          hamburgerList.classList.toggle("open");
-        });
-    } */
-
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      const hamburgerList = document.getElementById(styles.hamburger_list);
+      hamburgerList.classList.toggle(styles.open);
+    }
+  }, [isOpen]);
 
   return (
     <>
@@ -66,20 +64,19 @@ export default function Navbar() {
           )}
         </button>
       </div>
-      {isOpen ? (
-        <div
-          id="hamburger_list"
-          className="flex lg:hidden flex-col bg-white items-center gap-3 p-3 "
-        >
-          <div className="text-black font-medium">Home</div>
-          <div className="text-black font-medium">About</div>
-          <div className="text-black font-medium">Resume</div>
-          <div className="text-black font-medium">Portfolio</div>
-          <div className="text-black font-medium">Contact</div>
-        </div>
-      ) : (
-        <></>
-      )}
+
+      <div
+        id={styles.hamburger_list}
+        className={`flex lg:hidden ${
+          isOpen ? "visible" : "invisible"
+        } flex-col  items-center gap-3 p-3`}
+      >
+        <div className="text-black font-medium">Home</div>
+        <div className="text-black font-medium">About</div>
+        <div className="text-black font-medium">Resume</div>
+        <div className="text-black font-medium">Portfolio</div>
+        <div className="text-black font-medium">Contact</div>
+      </div>
     </>
   );
 }
