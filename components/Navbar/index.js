@@ -69,13 +69,13 @@ export default function Navbar() {
         id={styles.hamburger_list}
         className={`flex lg:hidden ${
           isOpen ? "visible" : "invisible"
-        } flex-col  items-center gap-3 p-3`}
+        } flex-col  items-center gap-3 bg-white`}
       >
-        <div className="text-black font-medium">Home</div>
+        <div className="text-black font-medium mt-3">Home</div>
         <div className="text-black font-medium">About</div>
         <div className="text-black font-medium">Resume</div>
         <div className="text-black font-medium">Portfolio</div>
-        <div className="text-black font-medium">Contact</div>
+        <div className="text-black font-medium mb-3">Contact</div>
       </div>
     </>
   );

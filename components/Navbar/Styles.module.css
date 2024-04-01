@@ -4,9 +4,11 @@
 }
 
 #hamburger_list {
+  position: absolute;
+  width: 100%; /* ขยายให้เต็มจอ */
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.33s ease;
 }
 
 #hamburger_list.open {
