@@ -4,10 +4,10 @@ import HomeV2 from "../components/HomeV2/index";
 
 export default function Page() {
   return (
-    <div>
+    <div className=" bg-black">
       <Navbar></Navbar>
       <HomeV2></HomeV2>
-      <HomeV1></HomeV1>
+      <div className="mt-[10%]">a</div>
     </div>
   );
 }
