@@ -1,42 +1,4 @@
 #home {
-  padding: 3%;
+  padding: 5%;
 }
 
-.line_1 {
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* Animation */
-.anim_typewriter {
-  animation: typewriter 7s steps(24) 1s infinite normal both,
-    blinkTextCursor 500ms steps(24) infinite normal;
-}
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 10em;
-  }
-  30% {
-    width: 10em;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(0, 0, 0, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-@keyframes deleteText {
-  from {
-    width: 10em;
-  }
-  to {
-    width: 0;
-  }
-}

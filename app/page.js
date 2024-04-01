@@ -7,6 +7,7 @@ export default function Page() {
     <div>
       <Navbar></Navbar>
       <HomeV2></HomeV2>
+      <HomeV1></HomeV1>
     </div>
   );
 }
