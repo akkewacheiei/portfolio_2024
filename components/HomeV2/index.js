@@ -4,24 +4,27 @@ function Home() {
   return (
     <div
       id={styles.home}
-      className="bg-white flex justify-center  content-end gap-[70px]"
+      className="bg-white flex justify-center items-center lg:items-stretch flex-col-reverse lg:flex-row gap-[70px]"
     >
       <>
-        <div className="flex flex-col gap-3 ">
-          <p className="text-black text-6xl font-bold">Hi,</p>
-          <p className="text-black text-6xl font-bold mt-3">
+        <div id={styles.content} className="flex flex-col gap-3 ">
+          <p className="text-black md:text-6xl text-4xl font-bold">Hi,</p>
+          <p className="text-black md:text-6xl text-4xl font-bold mt-3">
             I am <span className="text-[#4E87F6]">Akkewach</span>
           </p>
-          <p className="text-black text-6xl font-bold mt-3 ">
+          <p className="text-black md:text-6xl text-4xl font-bold mt-3 ">
             Software Developer
           </p>
-          <div className="flex gap-5 mt-[45px]">
+          <div className="flex gap-5 mt-[45px] mb-[30px]">
             <button className="bg-[#4E87F6] rounded-md text-white text-[16px] font-medium w-[134px] h-[40px]">
               Contact
             </button>
           </div>
           <>
-            <div id={styles.social_icons} className="flex gap-[30px] mt-[auto]">
+            <div
+              id={styles.social_icons}
+              className="flex gap-[30px] mt-[auto] justify-center lg:justify-start"
+            >
               <a href="https://www.facebook.com/akkewach" target="_blank">
                 <img
                   className="rounded-lg cursor-pointer"
@@ -53,6 +56,7 @@ function Home() {
 
       <>
         <img
+          id={styles.img}
           className="mb-10"
           src={"/images/profile2.png"}
           alt="Profile"
