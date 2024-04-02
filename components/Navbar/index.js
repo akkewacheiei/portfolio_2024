@@ -1,9 +1,11 @@
 "use client";
 import styles from "./Styles.module.css";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [pageSelected, setPageSelected] = useState("home");
 
   //Handles the opening and closing of our nav
   const handleClick = () => {
@@ -28,13 +30,56 @@ export default function Navbar() {
         </div>
 
         <div id="menu" className="hidden lg:flex gap-10">
-          <div className="text-black font-medium  underline decoration-2 underline-offset-8 decoration-[#4E87F6]">
+          <Link
+            onClick={() => setPageSelected("home")}
+            href="/"
+            className={`text-black font-medium  ${
+              pageSelected === "home" &&
+              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+            }`}
+          >
             Home
-          </div>
-          <div className="text-black font-medium">About</div>
-          <div className="text-black font-medium">Resume</div>
-          <div className="text-black font-medium">Portfolio</div>
-          <div className="text-black font-medium">Contact</div>
+          </Link>
+          <Link
+            onClick={() => setPageSelected("about")}
+            href="/about"
+            className={`text-black font-medium  ${
+              pageSelected === "about" &&
+              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+            }`}
+          >
+            About
+          </Link>
+          <Link
+            onClick={() => setPageSelected("resume")}
+            href="/resume"
+            className={`text-black font-medium  ${
+              pageSelected === "resume" &&
+              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+            }`}
+          >
+            Resume
+          </Link>
+          <Link
+            onClick={() => setPageSelected("portfolio")}
+            href="/portfolio"
+            className={`text-black font-medium  ${
+              pageSelected === "portfolio" &&
+              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+            }`}
+          >
+            Portfolio
+          </Link>
+          <Link
+            onClick={() => setPageSelected("contact")}
+            href="/contact"
+            className={`text-black font-medium  ${
+              pageSelected === "contact" &&
+              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+            }`}
+          >
+            Contact
+          </Link>
         </div>
 
         <button
@@ -71,11 +116,21 @@ export default function Navbar() {
           isOpen ? "visible" : "invisible"
         } flex-col  items-center gap-3 bg-white mt-[58px]`}
       >
-        <div className="text-black font-medium mt-3">Home</div>
-        <div className="text-black font-medium">About</div>
-        <div className="text-black font-medium">Resume</div>
-        <div className="text-black font-medium">Portfolio</div>
-        <div className="text-black font-medium mb-3">Contact</div>
+        <Link href={"/"} className="text-black font-medium mt-3">
+          Home
+        </Link>
+        <Link href={"/about"} className="text-black font-medium">
+          About
+        </Link>
+        <Link href={"/resume"} className="text-black font-medium">
+          Resume
+        </Link>
+        <Link href={"/portfolio"} className="text-black font-medium">
+          Portfolio
+        </Link>
+        <Link href={"/contact"} className="text-black font-medium mb-3">
+          Contact
+        </Link>
       </div>
     </>
   );
