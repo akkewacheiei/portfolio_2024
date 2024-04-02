@@ -21,7 +21,7 @@ export default function Navbar() {
     <>
       <div
         id={styles.nav}
-        className="bg-white flex justify-between items-center border-black border-b border-opacity-10"
+        className="bg-white flex justify-between items-center border-black border-b border-opacity-10 fixed w-full "
       >
         <div id="logo">
           <div className="text-black font-bold">Akkewach</div>
@@ -69,7 +69,7 @@ export default function Navbar() {
         id={styles.hamburger_list}
         className={`flex lg:hidden ${
           isOpen ? "visible" : "invisible"
-        } flex-col  items-center gap-3 bg-white`}
+        } flex-col  items-center gap-3 bg-white mt-[58px]`}
       >
         <div className="text-black font-medium mt-3">Home</div>
         <div className="text-black font-medium">About</div>
