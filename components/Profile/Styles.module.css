@@ -1,0 +1,24 @@
+#text1 {
+    text-align: center;
+  }
+  @media (min-width: 1024px) {
+    #text1 {
+      text-align: left;
+    }
+  }
+  
+  #text2 {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  #text2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    width: 5.5rem;
+    height: 4px; /* ความกว้างของ underline */
+    background-color: #4e87f6; /* สีของ underline */
+  }
+  
