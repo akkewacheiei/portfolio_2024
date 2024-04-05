@@ -7,14 +7,18 @@ export default function Page() {
       id={styles.about}
       className="bg-white p-[100px] flex flex-col gap-3 items-center"
     >
-      <h1 className="text-6xl font-bold">About</h1>
       <div className="flex gap-8 flex-col lg:flex-row items-center justify-center mt-10">
-        <img
-          className="mb-10"
-          src={"/images/profile_crop.png"}
-          alt="Profile"
-          width={490}
-        ></img>
+        <div>
+          <h1 id={styles.text2} className="text-5xl font-bold w-[100%]">
+            About
+          </h1>
+          <img
+            className="mt-10 mb-10"
+            src={"/images/profile_crop.png"}
+            alt="Profile"
+            width={490}
+          ></img>
+        </div>
 
         <div className="flex flex-col">
           <p
@@ -23,10 +27,7 @@ export default function Page() {
           >
             AKKEWACH YODSOMBOON
           </p>
-          <p
-            id={styles.text1}
-            className="text-2xl font-bold"
-          >
+          <p id={styles.text1} className="text-2xl font-bold">
             Software Developer
           </p>
 
