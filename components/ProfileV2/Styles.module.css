@@ -19,10 +19,10 @@
   #text2::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 0.3rem;
     bottom: -0.5rem;
-    width: 5.5rem;
-    height: 4px; /* ความกว้างของ underline */
+    width: 6rem;
+    height: 3px; /* ความกว้างของ underline */
     background-color: #4e87f6; /* สีของ underline */
   }
   
