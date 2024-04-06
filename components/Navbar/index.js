@@ -19,6 +19,10 @@ export default function Navbar() {
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pageSelected]);
+
   return (
     <>
       <div
@@ -49,6 +53,16 @@ export default function Navbar() {
             }`}
           >
             About
+          </Link>
+          <Link
+            onClick={() => setPageSelected("skills")}
+            href="/skills"
+            className={`text-black font-medium  ${
+              pageSelected === "skills" &&
+              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+            }`}
+          >
+            Skills
           </Link>
           <Link
             onClick={() => setPageSelected("resume")}
@@ -116,19 +130,22 @@ export default function Navbar() {
           isOpen ? "visible" : "invisible"
         } flex-col  items-center gap-3 bg-white mt-[58px]`}
       >
-        <Link href={"/"} className="text-black font-medium mt-3">
+        <Link onClick={() => setPageSelected("home")} href={"/"} className="text-black font-medium mt-3">
           Home
         </Link>
-        <Link href={"/about"} className="text-black font-medium">
+        <Link onClick={() => setPageSelected("about")} href={"/about"} className="text-black font-medium">
           About
         </Link>
-        <Link href={"/resume"} className="text-black font-medium">
+        <Link onClick={() => setPageSelected("skills")} href={"/skills"} className="text-black font-medium">
+          Skills
+        </Link>
+        <Link onClick={() => setPageSelected("resume")} href={"/resume"} className="text-black font-medium">
           Resume
         </Link>
-        <Link href={"/portfolio"} className="text-black font-medium">
+        <Link onClick={() => setPageSelected("portfolio")} href={"/portfolio"} className="text-black font-medium">
           Portfolio
         </Link>
-        <Link href={"/contact"} className="text-black font-medium mb-3">
+        <Link  onClick={() => setPageSelected("contact")}href={"/contact"} className="text-black font-medium mb-3">
           Contact
         </Link>
       </div>
