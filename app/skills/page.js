@@ -1,10 +1,10 @@
 "use client";
-//import Profile from "../../components/ProfileV2/index";
+import Skills from "../../components/Skills/index";
 
 export default function Page() {
   return (
-    <div className=" pt-[300px]">
-      <div>SKILLS</div>
+    <div className=" pt-[100px]">
+     <Skills/>
     </div>
   );
 }

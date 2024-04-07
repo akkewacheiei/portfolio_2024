@@ -30,7 +30,7 @@ export default function Navbar() {
         className="bg-white flex justify-between items-center border-black border-b border-opacity-10 fixed w-full "
       >
         <div id="logo">
-          <div className="text-black font-bold">Akkewach</div>
+          <Link  href="/" className="text-black font-bold">Akkewach</Link>
         </div>
 
         <div id="menu" className="hidden lg:flex gap-10">
