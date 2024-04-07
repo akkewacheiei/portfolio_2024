@@ -2,8 +2,10 @@
 import styles from "./Styles.module.css";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [pageSelected, setPageSelected] = useState("home");
 
@@ -21,7 +23,7 @@ export default function Navbar() {
 
   useEffect(() => {
     setIsOpen(false);
-  }, [pageSelected]);
+  }, [pathname]);
 
   return (
     <>
@@ -30,70 +32,68 @@ export default function Navbar() {
         className="bg-white flex justify-between items-center border-black border-b border-opacity-10 fixed w-full "
       >
         <div id="logo">
-          <Link  href="/" className="text-black font-bold">Akkewach</Link>
+          <Link href="/" className="text-black font-bold">
+            Akkewach
+          </Link>
         </div>
 
         <div id="menu" className="hidden lg:flex gap-10">
           <Link
-            onClick={() => setPageSelected("home")}
             href="/"
             className={`text-black font-medium  ${
-              pageSelected === "home" &&
+              pathname === "/" &&
               "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
             }`}
           >
             Home
           </Link>
           <Link
-            onClick={() => setPageSelected("about")}
             href="/about"
             className={`text-black font-medium  ${
-              pageSelected === "about" &&
+              pathname === "/about" &&
               "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
             }`}
           >
             About
           </Link>
           <Link
-            onClick={() => setPageSelected("skills")}
             href="/skills"
             className={`text-black font-medium  ${
-              pageSelected === "skills" &&
+              pathname === "/skills" &&
               "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
             }`}
           >
             Skills
           </Link>
           <Link
-            onClick={() => setPageSelected("experience")}
             href="/experience"
             className={`text-black font-medium  ${
-              pageSelected === "experience" &&
+              pathname === "/experience" &&
               "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
             }`}
           >
             Experience
           </Link>
-          <Link
-            onClick={() => setPageSelected("portfolio")}
+          {/*  <Link
+           
             href="/portfolio"
             className={`text-black font-medium  ${
-              pageSelected === "portfolio" &&
+              pathname === "/portfolio" &&
               "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
             }`}
           >
             Portfolio
-          </Link>
-          <Link
-            onClick={() => setPageSelected("contact")}
+          </Link> */}
+          {/*    <Link
+         
             href="/contact"
             className={`text-black font-medium  ${
-              pageSelected === "contact" &&
+              pathname === "/contact" &&
               "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
             }`}
           >
             Contact
-          </Link>
+          </Link> */}
         </div>
 
         <button
@@ -130,24 +130,24 @@ export default function Navbar() {
           isOpen ? "visible" : "invisible"
         } flex-col  items-center gap-3 bg-white mt-[58px]`}
       >
-        <Link onClick={() => setPageSelected("home")} href={"/"} className="text-black font-medium mt-3">
+        <Link href={"/"} className="text-black font-medium mt-3">
           Home
         </Link>
-        <Link onClick={() => setPageSelected("about")} href={"/about"} className="text-black font-medium">
+        <Link href={"/about"} className="text-black font-medium">
           About
         </Link>
-        <Link onClick={() => setPageSelected("skills")} href={"/skills"} className="text-black font-medium">
+        <Link href={"/skills"} className="text-black font-medium">
           Skills
         </Link>
-        <Link onClick={() => setPageSelected("experience")} href={"/experience"} className="text-black font-medium">
-        Experience
+        <Link href={"/experience"} className="text-black font-medium mb-3">
+          Experience
         </Link>
-        <Link onClick={() => setPageSelected("portfolio")} href={"/portfolio"} className="text-black font-medium">
+        {/*  <Link  href={"/portfolio"} className="text-black font-medium">
           Portfolio
-        </Link>
-        <Link  onClick={() => setPageSelected("contact")}href={"/contact"} className="text-black font-medium mb-3">
+        </Link> */}
+        {/*       <Link href={"/contact"} className="text-black font-medium mb-3">
           Contact
-        </Link>
+        </Link> */}
       </div>
     </>
   );

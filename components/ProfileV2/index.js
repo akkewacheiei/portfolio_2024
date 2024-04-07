@@ -14,25 +14,25 @@ export default function Page() {
         >
           About
         </h1>
-        <div className="flex flex-col lg:flex-row gap-10 items-center lg:items-start">
+        <div className="flex flex-col lg:flex-row gap-10  items-center lg:items-start border-[1px] p-[1.5rem] bg-blue-50 rounded-md shadow-md">
           <img
             className=""
             src={"/images/profile.JPG"}
             alt="Profile"
             width={300}
           ></img>
-          <div className="flex flex-col">
-            <p id={styles.text1} className="text-2xl md:text-3xl font-bold">
+          <div className="flex flex-col mt-3">
+            <p id={styles.text1} className="text-xl md:text-3xl font-bold">
               AKKEWACH YODSOMBOON
             </p>
-            <p id={styles.text1} className="text-2xl md:text-3xl text-gray-400">
+            <p id={styles.text1} className="text-xl md:text-3xl text-gray-400">
               Software Developer
             </p>
 
             <>
               <div className="flex flex-col flex-wrap mt-2">
                 <p className="flex items-center gap-1">
-                  <span className="font-bold"> Birthday:</span> 7 May 1998
+                  <span className="font-bold"> Date of Birth:</span> 7 May 1998
                 </p>
                 <p className="flex items-center gap-1">
                   <span className="font-bold"> Gender:</span> Male
@@ -41,13 +41,12 @@ export default function Page() {
                   <span className="font-bold"> Nationality:</span> Thai
                 </p>
                 <p className="flex items-center gap-1">
-                  <span className="font-bold"> City:</span> Pathum Thani,
-                  Thailand
+                  <span className="font-bold"> Email:</span> akkewach.yodsomboon@gmail.com
                 </p>
                 <p className="flex items-center gap-1">
-                  <span className="font-bold"> Degree:</span> Bachelor, Computer
-                  Engineering
+                  <span className="font-bold"> Phone:</span> 084-004-5946
                 </p>
+               
               </div>
             </>
           </div>
