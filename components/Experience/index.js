@@ -27,7 +27,7 @@ export default function Page() {
 
         <div className="flex flex-col gap-1">
           <h2 className="font-bold text-3xl">Work Experience</h2>
-          <div className="flex gap-3 lg:w-[50%]">
+          <div className="flex gap-3 lg:w-[45%]">
             <CircleWithLine />
             <div>
               <p className="font-bold text-2xl">SOFTWARE DEVELOPER</p>
