@@ -4,7 +4,7 @@ import Education from "../../components/Education/index";
 
 export default function Page() {
   return (
-    <div className="mb-10">
+    <div className="pt-[100px] mb-10">
       <Profile />
 
       <div className="flex justify-center">

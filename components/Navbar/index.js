@@ -57,15 +57,6 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            href="/skills"
-            className={`text-black font-medium  ${
-              pathname === "/skills" &&
-              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
-            }`}
-          >
-            Skills
-          </Link>
-          <Link
             href="/experience"
             className={`text-black font-medium  ${
               pathname === "/experience" &&
@@ -73,6 +64,15 @@ export default function Navbar() {
             }`}
           >
             Experience
+          </Link>
+          <Link
+            href="/skills"
+            className={`text-black font-medium  ${
+              pathname === "/skills" &&
+              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+            }`}
+          >
+            Skills
           </Link>
           {/*  <Link
            
@@ -146,17 +146,17 @@ export default function Navbar() {
         </Link>
         <Link
           onClick={() => setIsOpen(false)}
-          href={"/skills"}
+          href={"/experience"}
           className="text-black font-medium"
         >
-          Skills
+          Experience
         </Link>
         <Link
           onClick={() => setIsOpen(false)}
-          href={"/experience"}
+          href={"/skills"}
           className="text-black font-medium mb-3"
         >
-          Experience
+          Skills
         </Link>
         {/*  <Link onClick={() => setIsOpen(false)}  href={"/portfolio"} className="text-black font-medium">
           Portfolio
