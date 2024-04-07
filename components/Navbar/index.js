@@ -65,14 +65,14 @@ export default function Navbar() {
             Skills
           </Link>
           <Link
-            onClick={() => setPageSelected("resume")}
-            href="/resume"
+            onClick={() => setPageSelected("experience")}
+            href="/experience"
             className={`text-black font-medium  ${
-              pageSelected === "resume" &&
+              pageSelected === "experience" &&
               "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
             }`}
           >
-            Resume
+            Experience
           </Link>
           <Link
             onClick={() => setPageSelected("portfolio")}
@@ -139,8 +139,8 @@ export default function Navbar() {
         <Link onClick={() => setPageSelected("skills")} href={"/skills"} className="text-black font-medium">
           Skills
         </Link>
-        <Link onClick={() => setPageSelected("resume")} href={"/resume"} className="text-black font-medium">
-          Resume
+        <Link onClick={() => setPageSelected("experience")} href={"/experience"} className="text-black font-medium">
+        Experience
         </Link>
         <Link onClick={() => setPageSelected("portfolio")} href={"/portfolio"} className="text-black font-medium">
           Portfolio

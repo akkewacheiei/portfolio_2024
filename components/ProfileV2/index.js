@@ -7,7 +7,7 @@ export default function Page() {
       id={styles.about}
       className="bg-white flex flex-col gap-3 items-center"
     >
-      <div className="flex gap-8 flex-col   items-center justify-center mt-10">
+      <div className="flex gap-8 flex-col   items-center justify-center">
         <h1
           id={styles.text2}
           className="text-4xl font-bold mb-6 text-[#4e87f6]"
