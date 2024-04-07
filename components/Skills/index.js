@@ -4,10 +4,9 @@ import styles from "./Styles.module.css";
 export default function Page() {
   return (
     <div id={styles.skills} className="bg-white ">
-      <div className="flex justify-center">
+      <div className="flex">
         <h1
-          id={styles.text2}
-          className="text-4xl font-bold mb-6 text-[#4e87f6]"
+          className="text-4xl font-bold mb-6 mt-5"
         >
           Skills
         </h1>
