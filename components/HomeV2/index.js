@@ -29,19 +29,19 @@ function Home() {
               id={styles.social_icons}
               className="flex lg:flex-row flex-col gap-[30px] justify-center "
             >
-              <a href="https://www.facebook.com/akkewach" target="_blank">
-                <img
-                  className="rounded-lg cursor-pointer"
-                  src={"/images/icons/fb_icon.png"}
-                  alt="fb_icon"
-                  width={32}
-                ></img>
-              </a>
               <a href="https://www.instagram.com/broyyy._" target="_blank">
                 <img
                   className="rounded-lg cursor-pointer"
                   src={"/images/icons/instragram_icon.png"}
                   alt="instragram_icon"
+                  width={32}
+                ></img>
+              </a>
+              <a href="https://www.facebook.com/akkewach" target="_blank">
+                <img
+                  className="rounded-lg cursor-pointer"
+                  src={"/images/icons/fb_icon.png"}
+                  alt="fb_icon"
                   width={32}
                 ></img>
               </a>
@@ -59,20 +59,20 @@ function Home() {
               className="w-[90%] lg:w-[490px] lg:hidden"
               src={"/images/profile2.png"}
               alt="Profile"
-              
             ></img>
           </div>
         </div>
       </>
 
       <>
-      <img
-              id={styles.img}
-              className="mb-10 hidden lg:block"
-              src={"/images/profile2.png"}
-              alt="Profile"
-              width={490}
-            ></img></>
+        <img
+          id={styles.img}
+          className="mb-10 hidden lg:block"
+          src={"/images/profile2.png"}
+          alt="Profile"
+          width={490}
+        ></img>
+      </>
     </div>
   );
 }
