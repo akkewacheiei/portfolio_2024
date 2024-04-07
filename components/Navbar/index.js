@@ -130,22 +130,38 @@ export default function Navbar() {
           isOpen ? "visible" : "invisible"
         } flex-col  items-center gap-3 bg-white mt-[58px]`}
       >
-        <Link href={"/"} className="text-black font-medium mt-3">
+        <Link
+          onClick={() => setIsOpen(false)}
+          href={"/"}
+          className="text-black font-medium mt-3"
+        >
           Home
         </Link>
-        <Link href={"/about"} className="text-black font-medium">
+        <Link
+          onClick={() => setIsOpen(false)}
+          href={"/about"}
+          className="text-black font-medium"
+        >
           About
         </Link>
-        <Link href={"/skills"} className="text-black font-medium">
+        <Link
+          onClick={() => setIsOpen(false)}
+          href={"/skills"}
+          className="text-black font-medium"
+        >
           Skills
         </Link>
-        <Link href={"/experience"} className="text-black font-medium mb-3">
+        <Link
+          onClick={() => setIsOpen(false)}
+          href={"/experience"}
+          className="text-black font-medium mb-3"
+        >
           Experience
         </Link>
-        {/*  <Link  href={"/portfolio"} className="text-black font-medium">
+        {/*  <Link onClick={() => setIsOpen(false)}  href={"/portfolio"} className="text-black font-medium">
           Portfolio
         </Link> */}
-        {/*       <Link href={"/contact"} className="text-black font-medium mb-3">
+        {/*       <Link onClick={() => setIsOpen(false)}  href={"/contact"} className="text-black font-medium mb-3">
           Contact
         </Link> */}
       </div>
