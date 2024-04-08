@@ -32,7 +32,7 @@ export default function Page() {
               <CircleWithLine />
               <div>
                 <p className="font-bold text-2xl">Software Developer</p>
-                <p className="inline-block bg-[#4e87f6] text-white p-2 rounded-full text-sm font-bold">
+                <p className="inline-block bg-main text-white p-2 rounded-full text-sm font-bold">
                   AUG 2020 - JAN 2024
                 </p>
                 <p className="font-bold">Wellliness Co.,Ltd.</p>
@@ -73,7 +73,7 @@ export default function Page() {
                 <p className="font-bold text-2xl">
                   Bachelor of Engineering (B.Eng.) in Computer Engineering
                 </p>
-                <p className="inline-block bg-[#4e87f6] text-white p-2 rounded-full text-sm font-bold">
+                <p className="inline-block bg-main text-white p-2 rounded-full text-sm font-bold">
                   2016 - 2020
                 </p>
                 <p className="font-bold">

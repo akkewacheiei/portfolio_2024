@@ -49,7 +49,7 @@ export default function Page() {
             <a href="/pdf/resume.pdf" target="_blank">
               <button
                 id={styles.download_cv}
-                className="bg-[#4E87F6] rounded-md text-white text-[16px] font-medium w-[134px] h-[40px] mt-5"
+                className="bg-main rounded-md text-white text-[16px] font-medium w-[134px] h-[40px] mt-5"
               >
                 View Resume
               </button>

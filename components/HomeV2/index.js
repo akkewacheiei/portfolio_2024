@@ -12,7 +12,7 @@ function Home() {
         <div id={styles.content} className="flex flex-col gap-3 items-stretch">
           <p className="text-black md:text-6xl text-4xl font-bold ">Hi,</p>
           <p className="text-black md:text-6xl text-4xl font-bold lg:mt-3">
-            I am <span className="text-[#4E87F6]">Akkewach</span>
+            I am <span className="text-main">Akkewach</span>
           </p>
           <p className="text-black md:text-6xl text-4xl font-bold lg:mt-3 ">
             Software Developer
@@ -25,7 +25,7 @@ function Home() {
           >
             <button
               id={styles.download_cv}
-              className="bg-[#4E87F6] rounded-md text-white text-[16px] font-medium w-[134px] h-[40px]"
+              className="bg-main rounded-md text-white text-[16px] font-medium w-[134px] h-[40px]"
             >
               View Resume
             </button>

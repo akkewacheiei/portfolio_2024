@@ -13,31 +13,31 @@ export default function Page() {
         <section>
           <h2 className="font-bold text-xl">Frontend</h2>
           <div className="flex flex-wrap gap-2">
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               Next.js
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               React.js
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               React Native
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               Redux
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               HTML
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               CSS
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               JavaScript
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               TailwindCSS
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               Bootstrap
             </span>
           </div>
@@ -45,10 +45,10 @@ export default function Page() {
         <section>
           <h2 className="font-bold mt-5 text-xl">Backend</h2>
           <div className="flex flex-wrap gap-2">
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               Node.js
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               MySQL
             </span>
           </div>
@@ -56,16 +56,16 @@ export default function Page() {
         <section>
           <h2 className="font-bold mt-5 text-xl">Other</h2>
           <div className="flex flex-wrap gap-2">
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               Git
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               AWS
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               Nginx
             </span>
-            <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+            <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
               Figma
             </span>
           </div>

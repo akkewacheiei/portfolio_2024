@@ -23,7 +23,7 @@ export default function Page() {
           <div className="flex flex-col">
             <p
               id={styles.text1}
-              className="text-2xl md:text-3xl text-[#4E87F6] font-bold"
+              className="text-2xl md:text-3xl text-main font-bold"
             >
               AKKEWACH YODSOMBOON
             </p>
@@ -35,28 +35,28 @@ export default function Page() {
               <div className="flex flex-col flex-wrap mt-8">
                 <p className="flex items-center gap-1">
                   <i
-                    className="fa fa-chevron-right text-[#4E87F6]"
+                    className="fa fa-chevron-right text-main"
                     aria-hidden="true"
                   ></i>
                   <span className="font-bold"> Birthday:</span> 7 May 1998
                 </p>
                 <p className="flex items-center gap-1">
                   <i
-                    className="fa fa-chevron-right text-[#4E87F6]"
+                    className="fa fa-chevron-right text-main"
                     aria-hidden="true"
                   ></i>
                   <span className="font-bold"> Gender:</span> Male
                 </p>
                 <p className="flex items-center gap-1">
                   <i
-                    className="fa fa-chevron-right text-[#4E87F6]"
+                    className="fa fa-chevron-right text-main"
                     aria-hidden="true"
                   ></i>
                   <span className="font-bold"> Nationality:</span> Thai
                 </p>
                 <p className="flex items-center gap-1">
                   <i
-                    className="fa fa-chevron-right text-[#4E87F6]"
+                    className="fa fa-chevron-right text-main"
                     aria-hidden="true"
                   ></i>
                   <span className="font-bold"> Degree:</span> Bachelor, Computer
@@ -64,7 +64,7 @@ export default function Page() {
                 </p>
                 <p className="flex items-center gap-1">
                   <i
-                    className="fa fa-chevron-right text-[#4E87F6]"
+                    className="fa fa-chevron-right text-main"
                     aria-hidden="true"
                   ></i>
                   <span className="font-bold"> City:</span> Pathum Thani,
@@ -72,14 +72,14 @@ export default function Page() {
                 </p>
                 <p className="flex items-center gap-1">
                   <i
-                    className="fa fa-chevron-right text-[#4E87F6]"
+                    className="fa fa-chevron-right text-main"
                     aria-hidden="true"
                   ></i>
                   <span className="font-bold"> Phone:</span> +66 84 004 5946
                 </p>
                 <p className="flex items-center gap-1">
                   <i
-                    className="fa fa-chevron-right text-[#4E87F6]"
+                    className="fa fa-chevron-right text-main"
                     aria-hidden="true"
                   ></i>
                   <span className="font-bold"> Email:</span>{" "}
@@ -88,7 +88,7 @@ export default function Page() {
 
                 <p className="flex items-center gap-1">
                   <i
-                    className="fa fa-chevron-right text-[#4E87F6]"
+                    className="fa fa-chevron-right text-main"
                     aria-hidden="true"
                   ></i>
                   <span className="font-bold"> GitHub:</span>

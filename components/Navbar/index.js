@@ -57,7 +57,7 @@ export default function Navbar({ activeHeading }) {
             <div
               className={` text-black font-medium cursor-pointer  ${
                 activeHeading === "home_heading" &&
-                "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+                "underline decoration-2 underline-offset-8 decoration-main"
               }`}
             >
               Home
@@ -75,7 +75,7 @@ export default function Navbar({ activeHeading }) {
             <div
               className={` text-black font-medium cursor-pointer  ${
                 activeHeading === "about_heading" &&
-                "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+                "underline decoration-2 underline-offset-8 decoration-main"
               }`}
             >
               About
@@ -93,7 +93,7 @@ export default function Navbar({ activeHeading }) {
             <div
               className={` text-black font-medium cursor-pointer  ${
                 activeHeading === "skills_heading" &&
-                "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+                "underline decoration-2 underline-offset-8 decoration-main"
               }`}
             >
               Skills
@@ -111,7 +111,7 @@ export default function Navbar({ activeHeading }) {
             <div
               className={` text-black font-medium cursor-pointer  ${
                 activeHeading === "experience_heading" &&
-                "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+                "underline decoration-2 underline-offset-8 decoration-main"
               }`}
             >
               Experience
