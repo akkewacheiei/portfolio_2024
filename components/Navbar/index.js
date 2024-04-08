@@ -84,24 +84,6 @@ export default function Navbar({ activeHeading }) {
 
           <ScrollLink
             activeClass="active"
-            to="experience_heading"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            <div
-              className={` text-black font-medium cursor-pointer  ${
-                activeHeading === "experience_heading" &&
-                "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
-              }`}
-            >
-              Experience
-            </div>
-          </ScrollLink>
-
-          <ScrollLink
-            activeClass="active"
             to="skills_heading"
             spy={true}
             smooth={true}
@@ -115,6 +97,24 @@ export default function Navbar({ activeHeading }) {
               }`}
             >
               Skills
+            </div>
+          </ScrollLink>
+
+          <ScrollLink
+            activeClass="active"
+            to="experience_heading"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <div
+              className={` text-black font-medium cursor-pointer  ${
+                activeHeading === "experience_heading" &&
+                "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+              }`}
+            >
+              Experience
             </div>
           </ScrollLink>
         </div>
@@ -183,21 +183,6 @@ export default function Navbar({ activeHeading }) {
           >
             About
           </div>
-        </ScrollLink>{" "}
-        <ScrollLink
-          activeClass="active"
-          to="experience_heading"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <div
-            onClick={() => setIsOpen(false)}
-            className="text-black font-medium"
-          >
-            Experience
-          </div>
         </ScrollLink>
         <ScrollLink
           activeClass="active"
@@ -212,6 +197,21 @@ export default function Navbar({ activeHeading }) {
             className="text-black font-medium mb-3"
           >
             Skills
+          </div>
+        </ScrollLink>
+        <ScrollLink
+          activeClass="active"
+          to="experience_heading"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
+          <div
+            onClick={() => setIsOpen(false)}
+            className="text-black font-medium"
+          >
+            Experience
           </div>
         </ScrollLink>
       </div>
