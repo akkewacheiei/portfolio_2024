@@ -7,8 +7,8 @@ export default function Page() {
       id={styles.about}
       className="bg-white flex flex-col gap-3 items-center"
     >
-      <div className="mb-5 text-center">
-        <h1 className="text-5xl font-bold  text-black">About me</h1>
+      <div className="mb-4 text-center">
+        <h1 className="text-4xl font-bold  text-black">About me</h1>
         <p className="text-gray-500 text-sm">My introduction</p>
       </div>
 
@@ -23,12 +23,12 @@ export default function Page() {
           <p id={styles.text1} className="text-2xl md:text-2xl font-bold">
             I am Akkewach,
           </p>
-          <p className="text-gray-500 mb-5">
+          <p id={styles.text2} className="text-gray-500 mb-5">
             I am a software developer with 3 years and 5 months of experience in
             developing both websites and applications, I continue to further my
             skills to grow in this field.
           </p>
-          <section className="flex justify-between">
+          <section className="flex lg:justify-between justify-around">
             <div className="flex flex-col text-center">
               <span className="font-bold text-2xl">03+</span>
               <span className="text-gray-500 text-sm">Years</span>
@@ -45,9 +45,14 @@ export default function Page() {
               <span className="text-gray-500 text-sm">worked</span>
             </div>
           </section>
-          <button className="bg-[#4E87F6] rounded-md text-white text-[16px] font-medium w-[134px] h-[40px] mt-5">
-            Download CV
-          </button>
+          <div className="flex justify-center lg:justify-start">
+            <button
+              id={styles.download_cv}
+              className="bg-[#4E87F6] rounded-md text-white text-[16px] font-medium w-[134px] h-[40px] mt-5"
+            >
+              Download CV
+            </button>
+          </div>
         </section>
       </div>
     </div>

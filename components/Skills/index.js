@@ -5,11 +5,9 @@ export default function Page() {
   return (
     <div id={styles.skills} className="bg-white mb-10">
       <div className="flex justify-center mb-20  ">
-        <h1 id={styles.text2} className="text-4xl font-bold text-[#4e87f6]">
-          Skills
-        </h1>
+        <h1 className="text-4xl font-bold text-black">Skills</h1>
       </div>
-      <p className="font-bold">Front-End</p>
+      <p className="font-bold text-xl">Front-End</p>
       <div className="flex flex-wrap gap-2">
         <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
           React.js
@@ -24,7 +22,7 @@ export default function Page() {
           Next.js
         </span>
       </div>
-      <p className="font-bold mt-5">Back-End</p>
+      <p className="font-bold mt-5 text-xl">Back-End</p>
       <div className="flex flex-wrap gap-2">
         <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
           Node.js
@@ -36,7 +34,7 @@ export default function Page() {
           MySQL
         </span>
       </div>
-      <p className="font-bold mt-5">Other</p>
+      <p className="font-bold mt-5 text-xl">Other</p>
       <div className="flex flex-wrap gap-2">
         <span className="rounded-full bg-[#4e87f6] hover:animate-pulse px-4 py-2 text-center text-sm text-white">
           Git

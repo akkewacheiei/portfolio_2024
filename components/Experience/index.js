@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <div id={styles.experience} className="bg-white  px-[2%] md:px-[10%] ">
       <div className="flex justify-center mb-20 ">
-        <h1 id={styles.text2} className="text-4xl font-bold text-[#4e87f6]">
+        <h1  className="text-4xl font-bold text-black">
           Experience
         </h1>
       </div>
