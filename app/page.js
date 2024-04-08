@@ -47,7 +47,7 @@ export default function Page() {
         <span className=" border-[1px] w-[80%] mb-20 mt-10 flex"></span>
       </div>
 
-      <div className="bg-white lg:mb-[25%]">
+      <div className="bg-white mb-[25%]">
         <Experience />
       </div>
 
