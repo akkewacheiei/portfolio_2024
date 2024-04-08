@@ -1,10 +1,11 @@
 "use client";
 import styles from "./Styles.module.css";
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
+import NextLink from "next/link";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { usePathname } from "next/navigation";
 
-export default function Navbar() {
+export default function Navbar({ activeHeading }) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [pageSelected, setPageSelected] = useState("home");
@@ -32,68 +33,90 @@ export default function Navbar() {
         className="bg-white flex justify-between items-center border-black border-b border-opacity-10 fixed w-full "
       >
         <div id="logo">
-          <Link href="/" className="text-black font-bold">
-            Akkewach
-          </Link>
+          <ScrollLink
+            activeClass="active"
+            to="home_heading"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <div className="text-black font-bold cursor-pointer">Akkewach</div>
+          </ScrollLink>
         </div>
 
         <div id="menu" className="hidden lg:flex gap-10">
-          <Link
-            href="/"
-            className={`text-black font-medium  ${
-              pathname === "/" &&
-              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
-            }`}
+          <ScrollLink
+            activeClass="active"
+            to="home_heading"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
           >
-            Home
-          </Link>
-          <Link
-            href="/about"
-            className={`text-black font-medium  ${
-              pathname === "/about" &&
-              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
-            }`}
+            <div
+              className={` text-black font-medium cursor-pointer  ${
+                activeHeading === "home_heading" &&
+                "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+              }`}
+            >
+              Home
+            </div>
+          </ScrollLink>
+
+          <ScrollLink
+            activeClass="active"
+            to="about_heading"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
           >
-            About
-          </Link>
-          <Link
-            href="/experience"
-            className={`text-black font-medium  ${
-              pathname === "/experience" &&
-              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
-            }`}
+            <div
+              className={` text-black font-medium cursor-pointer  ${
+                activeHeading === "about_heading" &&
+                "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+              }`}
+            >
+              About
+            </div>
+          </ScrollLink>
+
+          <ScrollLink
+            activeClass="active"
+            to="experience_heading"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
           >
-            Experience
-          </Link>
-          <Link
-            href="/skills"
-            className={`text-black font-medium  ${
-              pathname === "/skills" &&
-              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
-            }`}
+            <div
+              className={` text-black font-medium cursor-pointer  ${
+                activeHeading === "experience_heading" &&
+                "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+              }`}
+            >
+              Experience
+            </div>
+          </ScrollLink>
+
+          <ScrollLink
+            activeClass="active"
+            to="skills_heading"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
           >
-            Skills
-          </Link>
-          {/*  <Link
-           
-            href="/portfolio"
-            className={`text-black font-medium  ${
-              pathname === "/portfolio" &&
-              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
-            }`}
-          >
-            Portfolio
-          </Link> */}
-          {/*    <Link
-         
-            href="/contact"
-            className={`text-black font-medium  ${
-              pathname === "/contact" &&
-              "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
-            }`}
-          >
-            Contact
-          </Link> */}
+            <div
+              className={` text-black font-medium cursor-pointer  ${
+                activeHeading === "skills_heading" &&
+                "underline decoration-2 underline-offset-8 decoration-[#4E87F6]"
+              }`}
+            >
+              Skills
+            </div>
+          </ScrollLink>
         </div>
 
         <button
@@ -130,40 +153,67 @@ export default function Navbar() {
           isOpen ? "visible" : "invisible"
         } flex-col  items-center gap-3 bg-white mt-[58px]`}
       >
-        <Link
-          onClick={() => setIsOpen(false)}
-          href={"/"}
-          className="text-black font-medium mt-3"
+        {" "}
+        <ScrollLink
+          activeClass="active"
+          to="home_heading"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
         >
-          Home
-        </Link>
-        <Link
-          onClick={() => setIsOpen(false)}
-          href={"/about"}
-          className="text-black font-medium"
+          <div
+            onClick={() => setIsOpen(false)}
+            className="text-black font-medium mt-3"
+          >
+            Home
+          </div>{" "}
+        </ScrollLink>{" "}
+        <ScrollLink
+          activeClass="active"
+          to="about_heading"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
         >
-          About
-        </Link>
-        <Link
-          onClick={() => setIsOpen(false)}
-          href={"/experience"}
-          className="text-black font-medium"
+          <div
+            onClick={() => setIsOpen(false)}
+            className="text-black font-medium"
+          >
+            About
+          </div>
+        </ScrollLink>{" "}
+        <ScrollLink
+          activeClass="active"
+          to="experience_heading"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
         >
-          Experience
-        </Link>
-        <Link
-          onClick={() => setIsOpen(false)}
-          href={"/skills"}
-          className="text-black font-medium mb-3"
+          <div
+            onClick={() => setIsOpen(false)}
+            className="text-black font-medium"
+          >
+            Experience
+          </div>
+        </ScrollLink>
+        <ScrollLink
+          activeClass="active"
+          to="skills_heading"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
         >
-          Skills
-        </Link>
-        {/*  <Link onClick={() => setIsOpen(false)}  href={"/portfolio"} className="text-black font-medium">
-          Portfolio
-        </Link> */}
-        {/*       <Link onClick={() => setIsOpen(false)}  href={"/contact"} className="text-black font-medium mb-3">
-          Contact
-        </Link> */}
+          <div
+            onClick={() => setIsOpen(false)}
+            className="text-black font-medium mb-3"
+          >
+            Skills
+          </div>
+        </ScrollLink>
       </div>
     </>
   );

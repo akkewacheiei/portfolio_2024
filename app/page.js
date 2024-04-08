@@ -4,14 +4,28 @@ import Profile from "../components/ProfileV2/index";
 import Education from "../components/Education/index";
 import Skills from "../components/Skills/index";
 import Experience from "../components/Experience/index";
+import ScrollTracker from "../components/ScrollTracker/index";
+
+const headings = [
+  "home_heading",
+  "about_heading",
+  "experience_heading",
+  "skills_heading",
+]; // ระบุ id ของหัวข้อที่ต้องการตรวจสอบ
 
 export default function Page() {
   return (
     <div className=" bg-white">
+      <div id="home_heading"></div>
+
+      <ScrollTracker className="fixed" headings={headings} />
+    
+      {/* เพิ่มเนื้อหาของเว็บไซต์ที่ต้องการให้ผู้ใช้เลื่อนลงมาอ่าน */}
+
       <HomeV2></HomeV2>
 
-      <div className="flex justify-center">
-        <span className=" border-[1px] w-[80%] mb-10 mt-10 flex"></span>
+      <div id="about_heading" className="flex justify-center">
+        <span className=" border-[1px] w-[80%] mb-20 mt-10 flex"></span>
       </div>
 
       <Profile />
@@ -22,22 +36,21 @@ export default function Page() {
 
       <Education />
 
-      <div className="flex justify-center">
-        <span className=" border-[1px] w-[80%] mb-10 mt-10 flex"></span>
+      <div id="experience_heading" className="flex justify-center">
+        <span className=" border-[1px] w-[80%] mb-20 mt-10 flex"></span>
       </div>
 
       <div className="bg-white">
         <Experience />
       </div>
-   
-      <div className="flex justify-center">
-        <span className=" border-[1px] w-[80%] mb-10 mt-10 flex"></span>
+
+      <div id="skills_heading" className="flex justify-center">
+        <span className=" border-[1px] w-[80%] mb-20 mt-10 flex"></span>
       </div>
 
-      <div className="mb-20">
+      <div className="lg:mb-[25%]">
         <Skills />
       </div>
-  
     </div>
   );
 }
