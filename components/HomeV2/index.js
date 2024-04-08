@@ -1,5 +1,6 @@
 import styles from "./Styles.module.css";
 import Link from "next/link";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function Home() {
   return (
@@ -16,14 +17,19 @@ function Home() {
           <p className="text-black md:text-6xl text-4xl font-bold lg:mt-3 ">
             Software Developer
           </p>
-          <Link
-            href={"/about"}
+          <ScrollLink
+            activeClass="active"
+            to="about_heading"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
             className="flex gap-5 lg:mt-[45px] lg:mb-[30px] justify-start"
           >
             <button className="bg-[#4E87F6] rounded-md text-white text-[16px] font-medium w-[134px] h-[40px]">
               Contact
             </button>
-          </Link>
+          </ScrollLink>
           <div className="flex justify-between lg:mt-[auto]">
             <div
               id={styles.social_icons}
