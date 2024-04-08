@@ -17,19 +17,20 @@ function Home() {
           <p className="text-black md:text-6xl text-4xl font-bold lg:mt-3 ">
             Software Developer
           </p>
-          <ScrollLink
-            activeClass="active"
-            to="about_heading"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
+
+          <a
+            href="/pdf/resume.pdf"
             className="flex gap-5 lg:mt-[45px] lg:mb-[30px] justify-start"
+            target="_blank"
           >
-            <button className="bg-[#4E87F6] rounded-md text-white text-[16px] font-medium w-[134px] h-[40px]">
-              About me
+            <button
+              id={styles.download_cv}
+              className="bg-[#4E87F6] rounded-md text-white text-[16px] font-medium w-[134px] h-[40px]"
+            >
+              View Resume
             </button>
-          </ScrollLink>
+          </a>
+
           <div className="flex justify-between lg:mt-[auto]">
             <div
               id={styles.social_icons}
