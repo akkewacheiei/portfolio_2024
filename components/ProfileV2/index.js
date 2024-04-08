@@ -21,7 +21,7 @@ export default function Page() {
         ></img>
         <section className="flex flex-col flex-wrap lg:w-[25%]">
           <p id={styles.text1} className="text-2xl md:text-2xl font-bold">
-            I am Akkewach,
+            Akkewach Yodsomboon
           </p>
           <p id={styles.text2} className="text-gray-500 mb-5">
             I am a software developer with 3 years and 5 months of experience in

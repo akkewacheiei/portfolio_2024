@@ -4,7 +4,7 @@ import styles from "./Styles.module.css";
 export default function Page() {
   return (
     <div id={styles.skills} className="bg-white mb-10">
-      <div className="text-center mb-10  ">
+      <div className="text-center mb-20  ">
         <h1 className="text-4xl font-bold text-black">Skills</h1>
         <p className="text-gray-500 text-sm">My technical level</p>
       </div>
