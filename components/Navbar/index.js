@@ -149,9 +149,9 @@ export default function Navbar({ activeHeading }) {
 
       <div
         id={styles.hamburger_list}
-        className={`flex lg:hidden ${
+        className={`flex lg:hidden py-3 ${
           isOpen ? "visible" : "invisible"
-        } flex-col  items-center gap-3 bg-white mt-[58px]`}
+        } flex-col  items-center gap-3 bg-gray-100 mt-[58px]`}
       >
         {" "}
         <ScrollLink
@@ -164,7 +164,7 @@ export default function Navbar({ activeHeading }) {
         >
           <div
             onClick={() => setIsOpen(false)}
-            className="text-black font-medium mt-3"
+            className="text-black font-medium"
           >
             Home
           </div>{" "}
@@ -194,7 +194,7 @@ export default function Navbar({ activeHeading }) {
         >
           <div
             onClick={() => setIsOpen(false)}
-            className="text-black font-medium mb-3"
+            className="text-black font-medium"
           >
             Skills
           </div>
