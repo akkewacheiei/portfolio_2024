@@ -63,7 +63,7 @@ function Home() {
             <img
               id={styles.img}
               className="w-[90%] lg:w-[490px] lg:hidden"
-              src={"/images/profile2.png"}
+              src={"/images/profile3.png"}
               alt="Profile"
             ></img>
           </div>
@@ -74,7 +74,7 @@ function Home() {
         <img
           id={styles.img}
           className="mb-10 hidden lg:block"
-          src={"/images/profile2.png"}
+          src={"/images/profile3.png"}
           alt="Profile"
           width={490}
         ></img>
