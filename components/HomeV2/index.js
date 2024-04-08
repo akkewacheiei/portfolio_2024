@@ -27,7 +27,7 @@ function Home() {
             className="flex gap-5 lg:mt-[45px] lg:mb-[30px] justify-start"
           >
             <button className="bg-[#4E87F6] rounded-md text-white text-[16px] font-medium w-[134px] h-[40px]">
-              Contact
+              About me
             </button>
           </ScrollLink>
           <div className="flex justify-between lg:mt-[auto]">

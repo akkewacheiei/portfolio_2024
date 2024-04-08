@@ -9,16 +9,16 @@ export default function Page() {
           <h1 className="text-4xl font-bold mb-6 mt-5">Education</h1>
         </div>
 
-        <h3 class="font-bold text-xl">
+        <h3 className="font-bold text-xl">
           Bachelor of Engineering (B.Eng.) in Computer Engineering
         </h3>
-        <h4 class="font-bold text-lg">
+        <h4 className="font-bold text-lg">
           Rajamangala University of Technology Thanyaburi
         </h4>
-        <p class="text-gray-700">2016 - 2020</p>
-        <div class="my-4">
-          <h4 class="font-bold text-lg">Course relevant</h4>
-          <ul class="list-disc list-inside mt-2">
+        <p className="text-gray-700">2016 - 2020</p>
+        <div className="my-4">
+          <h4 className="font-bold text-lg">Course relevant</h4>
+          <ul className="list-disc list-inside mt-2">
             <li>Data structures and Algorithms</li>
             <li>Software Engineering</li>
             <li>Database System</li>

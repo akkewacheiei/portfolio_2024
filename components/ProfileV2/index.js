@@ -7,50 +7,48 @@ export default function Page() {
       id={styles.about}
       className="bg-white flex flex-col gap-3 items-center"
     >
-      <div className="flex gap-8 flex-col   items-center justify-center">
-        <h1
-          id={styles.text2}
-          className="text-4xl font-bold mb-6 text-[#4e87f6]"
-        >
-          About
-        </h1>
-        <div className="flex flex-col lg:flex-row gap-10  items-center lg:items-start border-[1px] p-[1.5rem] bg-blue-50 rounded-md shadow-md">
-          <img
-            className=""
-            src={"/images/profile.JPG"}
-            alt="Profile"
-            width={300}
-          ></img>
-          <div className="flex flex-col mt-3">
-            <p id={styles.text1} className="text-xl md:text-3xl font-bold">
-              AKKEWACH YODSOMBOON
-            </p>
-            <p id={styles.text1} className="text-xl md:text-3xl text-gray-400">
-              Software Developer
-            </p>
+      <div className="mb-5 text-center">
+        <h1 className="text-5xl font-bold  text-black">About me</h1>
+        <p className="text-gray-500 text-sm">My introduction</p>
+      </div>
 
-            <>
-              <div className="flex flex-col flex-wrap mt-2">
-                <p className="flex items-center gap-1">
-                  <span className="font-bold"> Date of Birth:</span> 7 May 1998
-                </p>
-                <p className="flex items-center gap-1">
-                  <span className="font-bold"> Gender:</span> Male
-                </p>
-                <p className="flex items-center gap-1">
-                  <span className="font-bold"> Nationality:</span> Thai
-                </p>
-                <p className="flex items-center gap-1">
-                  <span className="font-bold"> Email:</span> akkewach.yodsomboon@gmail.com
-                </p>
-                <p className="flex items-center gap-1">
-                  <span className="font-bold"> Phone:</span> 084-004-5946
-                </p>
-               
-              </div>
-            </>
-          </div>
-        </div>
+      <div className="flex flex-col lg:flex-row gap-[5%]  items-center lg:items-start justify-center  px-[10%] lg:px-[0px]">
+        <img
+          className="rounded-md"
+          src={"/images/profile.JPG"}
+          alt="Profile"
+          width={300}
+        ></img>
+        <section className="flex flex-col flex-wrap lg:w-[25%]">
+          <p id={styles.text1} className="text-2xl md:text-2xl font-bold">
+            I am Akkewach,
+          </p>
+          <p className="text-gray-500 mb-5">
+            I am a software developer with 3 years and 5 months of experience in
+            developing both websites and applications, I continue to further my
+            skills to grow in this field.
+          </p>
+          <section className="flex justify-between">
+            <div className="flex flex-col text-center">
+              <span className="font-bold text-2xl">03+</span>
+              <span className="text-gray-500 text-sm">Years</span>
+              <span className="text-gray-500 text-sm">experience</span>
+            </div>
+            <div className="flex flex-col text-center">
+              <span className="font-bold text-2xl">05+</span>
+              <span className="text-gray-500 text-sm">Completed</span>
+              <span className="text-gray-500 text-sm">projects</span>
+            </div>
+            <div className="flex flex-col text-center">
+              <span className="font-bold text-2xl">01+</span>
+              <span className="text-gray-500 text-sm">Companies</span>
+              <span className="text-gray-500 text-sm">worked</span>
+            </div>
+          </section>
+          <button className="bg-[#4E87F6] rounded-md text-white text-[16px] font-medium w-[134px] h-[40px] mt-5">
+            Download CV
+          </button>
+        </section>
       </div>
     </div>
   );

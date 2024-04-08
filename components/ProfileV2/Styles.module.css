@@ -3,11 +3,12 @@
 }
 
 #text1 {
-    text-align: center;
+    margin-top: 2rem;
   }
   @media (min-width: 1024px) {
     #text1 {
       text-align: left;
+      margin-top: 0px;
     }
   }
   
