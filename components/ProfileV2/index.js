@@ -46,12 +46,12 @@ export default function Page() {
             </div>
           </section>
           <div className="flex justify-center lg:justify-start">
-            <a href="/pdf/resume.pdf" target="_blank">
+            <a href="/pdf/portfolio.pdf" target="_blank">
               <button
                 id={styles.download_cv}
                 className="bg-main rounded-md text-white text-[16px] font-medium w-[134px] h-[40px] mt-5"
               >
-                View Resume
+                View Portfolio
               </button>
             </a>
           </div>
