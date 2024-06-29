@@ -3,6 +3,7 @@ import styles from "./Styles.module.css";
 import { useState } from "react";
 
 export default function Page() {
+  const programmingLanguage = ["javaScript", "TypeScript"];
   const frontendSkill = [
     "Next.js",
     "React.js",
@@ -34,7 +35,17 @@ export default function Page() {
         <p className="text-gray-500 text-sm">My technical level</p>
       </div>
 
-      <div className="lg:w-[50%]">
+      <div className="lg:w-[50%] flex flex-col gap-5">
+        <section>
+          <h2 className="font-bold text-xl">Language</h2>
+          <div className="flex flex-wrap gap-2">
+            {programmingLanguage.map((item) => (
+              <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
+                {item}
+              </span>
+            ))}
+          </div>
+        </section>
         <section>
           <h2 className="font-bold text-xl">Frontend</h2>
           <div className="flex flex-wrap gap-2">
@@ -46,7 +57,7 @@ export default function Page() {
           </div>
         </section>
         <section>
-          <h2 className="font-bold mt-5 text-xl">Backend</h2>
+          <h2 className="font-bold  text-xl">Backend</h2>
           <div className="flex flex-wrap gap-2">
             {backendSkill.map((item) => (
               <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
@@ -56,7 +67,7 @@ export default function Page() {
           </div>
         </section>
         <section>
-          <h2 className="font-bold mt-5 text-xl">Other</h2>
+          <h2 className="font-bold text-xl">Other</h2>
           <div className="flex flex-wrap gap-2">
             {otherSkill.map((item) => (
               <span className="rounded-full bg-main hover:animate-pulse px-4 py-2 text-center text-sm text-white">
