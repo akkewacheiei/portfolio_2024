@@ -3,7 +3,7 @@ import styles from "./Styles.module.css";
 import { useState } from "react";
 
 export default function Page() {
-  const programmingLanguage = ["javaScript", "TypeScript"];
+  const programmingLanguage = ["JavaScript", "TypeScript"];
   const frontendSkill = [
     "Next.js",
     "React.js",
