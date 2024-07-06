@@ -1,6 +1,4 @@
 import styles from "./Styles.module.css";
-import Link from "next/link";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function Home() {
   return (
