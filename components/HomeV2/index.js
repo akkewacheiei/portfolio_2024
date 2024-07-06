@@ -69,6 +69,7 @@ function Home() {
         </div>
       </>
 
+
       <>
         <img
           id={styles.img}
