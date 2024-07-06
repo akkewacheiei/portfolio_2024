@@ -37,7 +37,6 @@ export default function Page() {
 
       <Skills />
 
-
       <div id="experience_heading" className="flex justify-center">
         <span className=" border-[1px] w-[80%] mb-20 mt-10 flex"></span>
       </div>
