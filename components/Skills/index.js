@@ -1,6 +1,5 @@
 "use client";
 import styles from "./Styles.module.css";
-import { useState } from "react";
 
 export default function Page() {
   const programmingLanguage = ["JavaScript", "TypeScript"];
