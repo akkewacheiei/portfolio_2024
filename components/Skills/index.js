@@ -5,7 +5,9 @@ export default function Page() {
   const programmingLanguage = ["JavaScript", "TypeScript"];
   const frontendSkill = [
     "Next.js",
+    "Nuxt.js",
     "React.js",
+    "Vue.js",
     "React Native",
     "Redux",
     "HTML",

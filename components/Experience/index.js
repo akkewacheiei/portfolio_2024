@@ -31,7 +31,7 @@ export default function Page() {
             <div className="flex gap-3">
               <CircleWithLine />
               <div>
-                <p className="font-bold text-2xl">Software Developer</p>
+                <p className="font-bold text-2xl">Junior Developer</p>
                 <p className="inline-block bg-main text-white p-2 rounded-full text-sm font-bold">
                   AUG 2020 - JAN 2024
                 </p>
@@ -53,6 +53,27 @@ export default function Page() {
                   <li className="text-gray-500">
                     Collaborated with Admin support to assist users in resolving
                     issues encountered in the software.
+                  </li>
+                  <li className="text-gray-500">
+                    Continuously adapt and improve the software's features.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="flex gap-3">
+              <CircleWithLine />
+              <div>
+                <p className="font-bold text-2xl">Frontend Developer</p>
+                <p className="inline-block bg-main text-white p-2 rounded-full text-sm font-bold">
+                  JUL 2024 - SEP 2024
+                </p>
+                <p className="font-bold">Workmotion Co.,Ltd.</p>
+                <ul className="list-disc  pl-[1.25rem] ">
+                  <li className="text-gray-500">
+                    Working collaboratively with a team of UX/UI designers.
                   </li>
                   <li className="text-gray-500">
                     Continuously adapt and improve the software's features.

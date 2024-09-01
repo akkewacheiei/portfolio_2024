@@ -40,7 +40,7 @@ export default function Page() {
               <span className="text-gray-500 text-sm">projects</span>
             </div>
             <div className="flex flex-col text-center">
-              <span className="font-bold text-2xl">01+</span>
+              <span className="font-bold text-2xl">02+</span>
               <span className="text-gray-500 text-sm">Companies</span>
               <span className="text-gray-500 text-sm">worked</span>
             </div>
