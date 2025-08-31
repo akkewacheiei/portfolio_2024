@@ -20,7 +20,7 @@ export default function Page() {
               <div className="mb-4">
                 <p className="font-bold text-2xl">Summary</p>
                 <p className="text-gray-500">
-                  A software developer with 3 years and 5 months of experience
+                  A software developer with 4 years of experience
                   in developing both websites and applications.
                 </p>
               </div>

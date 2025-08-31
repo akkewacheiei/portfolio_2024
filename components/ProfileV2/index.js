@@ -24,7 +24,7 @@ export default function Page() {
             Akkewach Yodsomboon
           </p>
           <p id={styles.text2} className="text-gray-500 mb-5">
-            I am a software developer with 3 years and 5 months of experience in
+            I am a software developer with 4 years of experience in
             developing both websites and applications, I continue to further my
             skills to grow in this field.
           </p>
