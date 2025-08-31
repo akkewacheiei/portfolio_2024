@@ -30,7 +30,7 @@ export default function Page() {
           </p>
           <section className="flex lg:justify-between justify-around">
             <div className="flex flex-col text-center">
-              <span className="font-bold text-2xl">03+</span>
+              <span className="font-bold text-2xl">04+</span>
               <span className="text-gray-500 text-sm">Years</span>
               <span className="text-gray-500 text-sm">experience</span>
             </div>
