@@ -29,6 +29,13 @@ jobs:
 
           ssh -o StrictHostKeyChecking=no root@${{ secrets.SERVER_IP }} << 'EOF'
             cd /var/www/portfolio_2024
+
+            # 🔹 หยุด pm2 portfolio ถ้ามันยังรันอยู่
+            if command -v pm2 &> /dev/null; then
+              pm2 delete portfolio || true
+            fi
+
+            # 🔹 deploy ด้วย docker-compose
             docker compose down || true
             docker compose up -d --build
           EOF
