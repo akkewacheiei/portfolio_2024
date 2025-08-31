@@ -1,0 +1,34 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main   # เปลี่ยนเป็น branch ที่คุณใช้จริง
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout source code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # ติดตั้ง SSH Key เพื่อเข้า server
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # ส่งไฟล์ไปยัง Droplet
+      - name: Deploy with rsync
+        run: |
+          rsync -avz --delete \
+            -e "ssh -o StrictHostKeyChecking=no" \
+            ./ root@${{ secrets.SERVER_IP }}:/var/www/portfolio_2024/
+
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.SERVER_IP }} << 'EOF'
+            cd /var/www/portfolio_2024
+            docker-compose down
+            docker-compose up -d --build
+          EOF
