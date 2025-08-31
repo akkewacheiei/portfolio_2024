@@ -31,7 +31,7 @@ export default function Page() {
             <div className="flex gap-3">
               <CircleWithLine />
               <div>
-                <p className="font-bold text-2xl">Junior Developer</p>
+                <p className="font-bold text-2xl">Software Developer</p>
                 <p className="inline-block bg-main text-white p-2 rounded-full text-sm font-bold">
                   AUG 2020 - JAN 2024
                 </p>
@@ -66,7 +66,7 @@ export default function Page() {
             <div className="flex gap-3">
               <CircleWithLine />
               <div>
-                <p className="font-bold text-2xl">Frontend Developer</p>
+                <p className="font-bold text-2xl">Software Developer</p>
                 <p className="inline-block bg-main text-white p-2 rounded-full text-sm font-bold">
                   JUL 2024 - SEP 2024
                 </p>
