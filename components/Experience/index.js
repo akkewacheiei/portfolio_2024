@@ -68,7 +68,7 @@ export default function Page() {
               <div>
                 <p className="font-bold text-2xl">Software Developer</p>
                 <p className="inline-block bg-main text-white p-2 rounded-full text-sm font-bold">
-                  JUL 2024 - SEP 2024
+                  JUL 2024 - PRESENT
                 </p>
                 <p className="font-bold">Workmotion Co.,Ltd.</p>
                 <ul className="list-disc  pl-[1.25rem] ">
