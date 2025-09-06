@@ -20,8 +20,8 @@ export default function Page() {
               <div className="mb-4">
                 <p className="font-bold text-2xl">Summary</p>
                 <p className="text-gray-500">
-                  A software developer with 4 years of experience
-                  in developing both websites and applications.
+                  A software developer with 4 years of experience in developing
+                  both websites and applications.
                 </p>
               </div>
             </div>
@@ -31,7 +31,7 @@ export default function Page() {
             <div className="flex gap-3">
               <CircleWithLine />
               <div>
-                <p className="font-bold text-2xl">Software Developer</p>
+                <p className="font-bold text-2xl">Junior Developer</p>
                 <p className="inline-block bg-main text-white p-2 rounded-full text-sm font-bold">
                   AUG 2020 - JAN 2024
                 </p>
@@ -66,17 +66,28 @@ export default function Page() {
             <div className="flex gap-3">
               <CircleWithLine />
               <div>
-                <p className="font-bold text-2xl">Software Developer</p>
+                <p className="font-bold text-2xl">Frontend Developer</p>
                 <p className="inline-block bg-main text-white p-2 rounded-full text-sm font-bold">
                   JUL 2024 - PRESENT
                 </p>
                 <p className="font-bold">Workmotion Co.,Ltd.</p>
                 <ul className="list-disc  pl-[1.25rem] ">
                   <li className="text-gray-500">
-                    Working collaboratively with a team of UX/UI designers.
+                    Full-stack development with Next.js/Nuxt.js and
+                    Node.js/NestJS, including REST API design.
                   </li>
                   <li className="text-gray-500">
-                    Continuously adapt and improve the software's features.
+                    ITD Expert Anywhere – Online platform enabling SMEs to book
+                    and consult with business experts.
+                  </li>
+                  <li className="text-gray-500">
+                    Rebalance – Clinic management platform covering patient
+                    records, sales orders, stock management, and refund
+                    processes.
+                  </li>
+                  <li className="text-gray-500">
+                    INDY T-Shirt – T-shirt ordering and production system with
+                    dynamic work order generation and inventory management.
                   </li>
                 </ul>
               </div>
