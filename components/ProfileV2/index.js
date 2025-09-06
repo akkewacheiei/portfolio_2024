@@ -35,7 +35,7 @@ export default function Page() {
               <span className="text-gray-500 text-sm">experience</span>
             </div>
             <div className="flex flex-col text-center">
-              <span className="font-bold text-2xl">05+</span>
+              <span className="font-bold text-2xl">06+</span>
               <span className="text-gray-500 text-sm">Completed</span>
               <span className="text-gray-500 text-sm">projects</span>
             </div>
